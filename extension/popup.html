@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkGuard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <div class="logo">🛡️</div>
+      <div>
+        <h1>LinkGuard</h1>
+        <p>Phishing URL Detector</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="switch-container">
+        <label class="switch">
+          <input type="checkbox" id="protection-toggle">
+          <span class="slider"></span>
+        </label>
+        <span id="toggle-text">Protection: OFF</span>
+      </div>
+
+      <div class="result" id="status-box">
+        <div class="result-icon">🛡️</div>
+        <h2>Protection is OFF</h2>
+        <p>Turn it on to automatically scan websites.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Stay safe. Browse smart.</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Warning</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      padding: 24px;
+      text-align: center;
+      background: #ffffff;
+      color: #cc0000;
+    }
+    h1 { font-size: 24px; font-weight: 600; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    button {
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid #cc0000;
+    }
+    .leave { background: #cc0000; color: #ffffff; }
+    .leave:hover { background: #a30000; border-color: #a30000; }
+    .continue { background: #ffffff; color: #cc0000; }
+    .continue:hover { background: #ffe5e5; }
+  </style>
+</head>
+<body>
+  <h1>This site might be unsafe</h1>
+  <div class="buttons">
+    <button class="leave" onclick="window.history.back()">Leave site</button>
+    <button class="continue" onclick="continueToSite()">Continue</button>
+  </div>
+
+>
+</body>
+</html>
