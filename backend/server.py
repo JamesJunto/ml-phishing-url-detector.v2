@@ -122,6 +122,6 @@ def predict_url():
     return jsonify({
           "url": url,
           "prediction": int(prediction),
-          "phishing": bool(prediction == 1),
-          "label": "Phishing" if int(prediction) ==1 else "Legitimate"
+          "phishing": bool(prediction == 0),
+          "label": "Phishing" if int(prediction) ==0 else "Legitimate"
       })
